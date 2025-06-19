@@ -1,0 +1,56 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.16.1",
+    "sequelize": "^6.37.7",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "yarn": "^1.22.22"
+  },
+  "type": "module",
+  "name": "express-microservice-template",
+  "version": "1.0.0",
+  "description": "boilerplate repo",
+  "main": "server.js",
+  "author": "darshan hingu",
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,mjs}": [
+      "eslint --fix",
+      "prettier --check"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js,.mjs",
+    "format:check": "prettier --check \"**/*.{js,mjs,json,css,md}\"",
+    "test": "jest",
+    "test:staged": "jest --bail --findRelatedTests"
+  },
+   "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": ["js", "mjs"]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^30.0.2",
+    "eslint": "^9.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.5.0",
+    "husky": "^9.1.7",
+    "jest": "^30.0.1",
+    "lint-staged": "^16.1.2",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "sequelize-cli": "^6.6.3",
+    "supertest": "^7.1.1"
+  }
+}
