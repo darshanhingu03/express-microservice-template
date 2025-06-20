@@ -32,11 +32,14 @@
     "test": "jest",
     "test:staged": "jest --bail --findRelatedTests"
   },
-   "jest": {
+  "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
-    "moduleFileExtensions": ["js", "mjs"]
+    "moduleFileExtensions": [
+      "js",
+      "mjs"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.27.4",
@@ -47,6 +50,7 @@
     "eslint-plugin-prettier": "^5.5.0",
     "husky": "^9.1.7",
     "jest": "^30.0.1",
+    "jwks-rsa": "^3.2.0",
     "lint-staged": "^16.1.2",
     "nodemon": "^3.1.10",
     "prettier": "^3.5.3",
