@@ -15,4 +15,5 @@ export const env = {
     ? process.env.KAFKA_BROKERS.split(',')
     : ['localhost:9092'],
   KAFKA_GROUP_ID: process.env.KAFKA_GROUP_ID || 'express-microservice-group',
+  SERVICE: process.env.SERVICE || 'Your_service',
 };
